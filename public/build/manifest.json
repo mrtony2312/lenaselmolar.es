@@ -1,0 +1,35 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-2ovo57Mc.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/css/home.css": {
+    "file": "assets/home-B-zoGjFE.css",
+    "src": "resources/css/home.css",
+    "isEntry": true,
+    "name": "home",
+    "names": [
+      "home.css"
+    ]
+  },
+  "resources/css/modern.css": {
+    "file": "assets/modern-Cn8Ybd-W.css",
+    "src": "resources/css/modern.css",
+    "isEntry": true,
+    "name": "modern",
+    "names": [
+      "modern.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CAiCLEjY.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

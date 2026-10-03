@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Dominio canónico único: https://lenaselmolar.es
+# Cualquier acceso en HTTP, con www. o por un dominio antiguo
+# (casacubertatrias.es, lenhaviva.es, lenhaviva.com) se redirige con un solo 301.
+# Debe coincidir con APP_URL (.env) y con el dominio reclamado en Merchant Center:
+# php artisan merchant:validate lo comprueba.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^lenaselmolar\.es$ [NC]
+RewriteRule ^(.*)$ https://lenaselmolar.es/$1 [L,R=301]
+
+# Enrutar todo hacia public/
+RewriteRule ^$ public/ [L]
+RewriteRule (.*) public/$1 [L]
