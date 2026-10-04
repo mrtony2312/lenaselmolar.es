@@ -130,41 +130,60 @@ return [
      */
     'image_brand_tokens' => ['SunFire', 'Crépito', 'Termomont'],
 
+    /*
+     | Every needle below is sourced to an identified manufacturer or a
+     | commercial pellet brand (see the 2026-10-04 brand audit). Names that
+     | stay unconfirmed (MM Royal, Proxima Star, DIN Pellets, Green Energy,
+     | Bio Energy, Natural Energie/Energía Natural, Naturkraft, Nova Leña,
+     | Mi Pellet, Pellet Gold, Pellet Bear, Valboval, Palser, "guijuela
+     | chase", unbranded German pellets…) were removed on purpose: brand must
+     | stay empty until the name printed on the actual bag is confirmed.
+     */
     'brands' => [
-        'Natural Energie' => 'Natural Energie',
-        'Pellets Naturkraft' => 'Naturkraft',
-        'Naturkraft' => 'Naturkraft',
+        // Pellets — bag brand, not the distributor. Same brand across all
+        // pack sizes (1/2 palé … 12 palés); only the GTIN changes with it.
         'Naturpellet' => 'Naturpellet',
+        'Burpellet' => 'Burpellet',
+        'CYL Pellet' => 'CYL Pellet',
+        'Coterram' => 'Coterram',
+        'Bioforestal' => 'Bioforestal',
+        'Huella Verde' => 'Huella Verde',
+        // "Asturias" alone is a region name: narrow risk of a false match on
+        // a future unrelated product, kept because every current title that
+        // contains it is this confirmed commercial brand.
+        'Asturias' => 'Pellet Asturias',
+        'Woodstock' => 'Woodstock',
+        'Helios' => 'Helios',
+        'Limouzi' => 'Limouzi',
+        'Van Roje' => 'Van Roje',
         'Ardenforest' => 'Ardenforest',
         'Starforest' => 'Starforest',
-        'Bioforestal' => 'Bioforestal',
-        'Proxima Star' => 'Proxima Star',
-        'MM Royal' => 'MM Royal',
-        'Bio Energy' => 'Bio Energy',
-        'Green Energy' => 'Green Energy',
-        'Excellent pellets' => 'Excellent',
-        'excellent pellets' => 'Excellent',
-        'Edilkamin' => 'Edilkamin',
-        'Woodstock' => 'Woodstock',
-        'Coterram' => 'Coterram',
-        'Valboval' => 'Valboval',
-        'Van Roje' => 'Van Roje',
-        'Limouzi' => 'Limouzi',
+        'Badger' => 'Badger',
         'Vimasol' => 'Vimasol',
-        'Nova Leña' => 'Nova Leña',
-        'Mi Pellet' => 'Mi Pellet',
-        'DIN Pellets' => 'DIN Pellets',
-        'Pellet Gold' => 'Gold',
-        'Pellet Bear' => 'Bear',
-        'Pellet Badger' => 'Badger',
-        'Pellet Helios' => 'Helios',
-        'Palé Helios' => 'Helios',
-        'Palser' => 'Palser',
-        'CYL Pellet' => 'CYL',
+        'Ecopower' => 'Ecopower',
+        'Excellent' => 'Excellent Pellets',
+
+        // Appliances — manufacturer confirmed by model/catalog cross-check.
         // Stoves: only MBS is unambiguous in the titles ("MBS Magnum", "MBS
-        // Vesta"…). Temy (image files say "Termomont Temy Plus"), Moravia,
-        // Hunter, Vulkan, Olimpia are model names whose manufacturer is not
-        // in the data: store the confirmed brand in products.brand instead.
+        // Vesta"…). Olimp(ia), Vulkan, Hunter 14B/80B stay unmapped: a model
+        // name alone is not proof of manufacturer without the nameplate.
         'MBS' => 'MBS',
+        'Moravia' => 'KVS Moravia',
+        'Temy' => 'Termomont',
+        'Edilkamin' => 'Edilkamin',
+        'FreePoint' => 'FreePoint',
+        'Sannover' => 'Sannover',
+        'Redpod' => 'Redpod',
+        'Eider Biomasa' => 'Eider Biomasa',
+        'Cero rem' => 'Eider Biomasa',
+        // "Watt" is a generic word: narrow today because every current
+        // title containing it belongs to this manufacturer's range, but a
+        // future unrelated "Watt" product would need a stricter needle.
+        'Watt' => 'Eider Biomasa',
+        'BP-100' => 'FM Calefacción',
+        'BP-CH0' => 'FM Calefacción',
+        'BP-402' => 'FM Calefacción',
+        'FM CH-4' => 'FM Calefacción',
+        'Weber' => 'Weber',
     ],
 ];

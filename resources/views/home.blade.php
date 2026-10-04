@@ -259,11 +259,14 @@
 
                                                                                             </div>
 
+                                                                                            @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                             <span class="onsale"><span
                                                                                                     class="saled">Oferta</span></span>
+                                                                                            @endif
 
                                                                                             <div class="caption">
                                                                                                 <span class="price">
+                                                                                                    @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                                     <del
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -276,6 +279,7 @@
                                                                                                         class="screen-reader-text">El
                                                                                                         precio original era:
                                                                                                         {{ \App\Support\Money::format($product['old_price']) }}&nbsp;&euro;.</span>
+                                                                                                    @endif
                                                                                                     <ins
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -460,11 +464,14 @@
                                                                                                 </div>
                                                                                             </div>
 
+                                                                                            @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                             <span class="onsale"><span
                                                                                                     class="saled">Oferta</span></span>
+                                                                                            @endif
 
                                                                                             <div class="caption">
                                                                                                 <span class="price">
+                                                                                                    @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                                     <del
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -477,6 +484,7 @@
                                                                                                         class="screen-reader-text">El
                                                                                                         precio original era:
                                                                                                         {{ \App\Support\Money::format($product['old_price']) }}&nbsp;&euro;.</span>
+                                                                                                    @endif
                                                                                                     <ins
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -685,11 +693,14 @@
                                                                                                 </div>
                                                                                             </div>
 
+                                                                                            @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                             <span class="onsale"><span
                                                                                                     class="saled">Oferta</span></span>
+                                                                                            @endif
 
                                                                                             <div class="caption">
                                                                                                 <span class="price">
+                                                                                                    @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                                     <del
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -702,6 +713,7 @@
                                                                                                         class="screen-reader-text">El
                                                                                                         precio original era:
                                                                                                         {{ \App\Support\Money::format($product['old_price']) }}&nbsp;&euro;.</span>
+                                                                                                    @endif
                                                                                                     <ins
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -964,11 +976,14 @@
                                                                                                 </div>
                                                                                             </div>
 
+                                                                                            @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                             <span class="onsale"><span
                                                                                                     class="saled">Oferta</span></span>
+                                                                                            @endif
 
                                                                                             <div class="caption">
                                                                                                 <span class="price">
+                                                                                                    @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                                     <del
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -981,6 +996,7 @@
                                                                                                         class="screen-reader-text">El
                                                                                                         precio original era:
                                                                                                         {{ \App\Support\Money::format($product['old_price']) }}&nbsp;&euro;.</span>
+                                                                                                    @endif
                                                                                                     <ins
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -1165,11 +1181,14 @@
                                                                                                 </div>
                                                                                             </div>
 
+                                                                                            @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                             <span class="onsale"><span
                                                                                                     class="saled">Oferta</span></span>
+                                                                                            @endif
 
                                                                                             <div class="caption">
                                                                                                 <span class="price">
+                                                                                                    @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                                     <del
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -1182,6 +1201,7 @@
                                                                                                         class="screen-reader-text">El
                                                                                                         precio original era:
                                                                                                         {{ \App\Support\Money::format($product['old_price']) }}&nbsp;&euro;.</span>
+                                                                                                    @endif
                                                                                                     <ins
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -1366,11 +1386,14 @@
                                                                                                 </div>
                                                                                             </div>
 
+                                                                                            @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                             <span class="onsale"><span
                                                                                                     class="saled">Oferta</span></span>
+                                                                                            @endif
 
                                                                                             <div class="caption">
                                                                                                 <span class="price">
+                                                                                                    @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                                     <del
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -1383,6 +1406,7 @@
                                                                                                         class="screen-reader-text">El
                                                                                                         precio original era:
                                                                                                         {{ \App\Support\Money::format($product['old_price']) }}&nbsp;&euro;.</span>
+                                                                                                    @endif
                                                                                                     <ins
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -1568,11 +1592,14 @@
                                                                                                 </div>
                                                                                             </div>
 
+                                                                                            @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                             <span class="onsale"><span
                                                                                                     class="saled">Oferta</span></span>
+                                                                                            @endif
 
                                                                                             <div class="caption">
                                                                                                 <span class="price">
+                                                                                                    @if(config('merchant.reference_prices_verified') && !empty($product['old_price']) && (float) $product['old_price'] > (float) $product['price'])
                                                                                                     <del
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -1585,6 +1612,7 @@
                                                                                                         class="screen-reader-text">El
                                                                                                         precio original era:
                                                                                                         {{ \App\Support\Money::format($product['old_price']) }}&nbsp;&euro;.</span>
+                                                                                                    @endif
                                                                                                     <ins
                                                                                                         aria-hidden="true">
                                                                                                         <span
@@ -1722,7 +1750,7 @@
                 </details>
                 <details>
                     <summary>¿Cuál es el CNAE?</summary>
-                    <p>CNAE indicado: 161 — Sciage et rabotage du bois. Es una referencia administrativa y no implica una afirmación sobre capacidad de producción.</p>
+                    <p>CNAE indicado: 161 — Aserrado y cepillado de la madera. Es una referencia administrativa y no implica una afirmación sobre capacidad de producción.</p>
                 </details>
             </div>
         </div>
@@ -1741,7 +1769,7 @@
         ['¿Dónde está Leñas El Molar?', 'Calle de la Salud, 4, 28710 El Molar (Madrid), España. CIF E85899003.'],
         ['¿Qué productos ofrece?', 'Leña de calefacción, leña de encina, leña para estufa y chimenea, leña para barbacoa, distribución de leña y carbón. También se referencia la venta al por mayor.'],
         ['¿Hacéis entrega?', 'Existe una actividad de distribución / entrega local. Consulta cobertura y condiciones por teléfono o mediante el formulario de contacto antes de pedir.'],
-        ['¿Cuál es el CNAE?', 'CNAE indicado: 161 — Sciage et rabotage du bois. Es una referencia administrativa y no implica una afirmación sobre capacidad de producción.'],
+        ['¿Cuál es el CNAE?', 'CNAE indicado: 161 — Aserrado y cepillado de la madera. Es una referencia administrativa y no implica una afirmación sobre capacidad de producción.'],
     ])->map(fn ($q) => [
         '@type' => 'Question',
         'name' => $q[0],

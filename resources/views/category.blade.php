@@ -14,7 +14,7 @@
     $catIntro = $catIntros[$catSlug] ?? ('Productos de la categoría '.mb_strtolower($categoryName).'. Consulta cada ficha y la cobertura de entrega.');
 @endphp
 
-@section('title', $categoryName . ' a domicilio en España')
+@section('title', $categoryName . ' | Leñas El Molar C.B.')
 @section('meta_description', $catIntro)
 @section('canonical', url('categoria/'.$catSlug))
 
@@ -180,7 +180,7 @@
 
                         <div id="main" class="archive-shop col-12 col-xl-9 content col-12">
                             <header class="woocommerce-products-header">
-                                <h1 class="woocommerce-products-header__title page-title">{{ $categoryName }} a domicilio en España</h1>
+                                <h1 class="woocommerce-products-header__title page-title">{{ $categoryName }}</h1>
                                 <p class="lv-cat-intro" style="max-width:900px;color:#444;line-height:1.7;margin:10px 0 4px;">{{ $catIntro }}</p>
                             </header>
 

@@ -35,24 +35,19 @@ class ProductPresenter
     }
 
     /**
-     * Verified GTIN: the dedicated column first; the historical `ref` only as
-     * a fallback when it is a checksum-valid manufacturer GTIN that is not
-     * just the catalog id re-encoded. Never generated.
+     * Verified GTIN: the dedicated column only. The historical `ref` field is
+     * a WooCommerce import artefact (supplier SKU or a barcode never checked
+     * against the physical unit sold) and must never be sent as a GTIN, even
+     * when it happens to be checksum-valid — a valid checksum is not proof
+     * the code was read off the packaging of the item actually for sale.
      *
      * @return array{value: string|null, source: string|null}
      */
     public static function gtin(array $row): array
     {
-        $id = (string) (int) ($row['id'] ?? 0);
-
         $stored = trim((string) ($row['gtin'] ?? ''));
         if ($stored !== '') {
             return ['value' => Gtin::normalize($stored), 'source' => 'gtin'];
-        }
-
-        $ref = trim((string) ($row['ref'] ?? ''));
-        if ($ref !== '' && ! str_contains($ref, $id) && ($normalized = Gtin::normalize($ref))) {
-            return ['value' => $normalized, 'source' => 'ref'];
         }
 
         return ['value' => null, 'source' => null];
