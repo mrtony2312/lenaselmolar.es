@@ -23,6 +23,7 @@ class UnitPricing
     private const EXCLUDED_KEYWORDS = [
         'estufa', 'caldera', 'chimenea', 'quemador',
         'accesorio', 'recambio', 'tubo', 'limpieza',
+        'barbacoa', 'parrilla',
     ];
 
     private const EXCLUDED_CATEGORIES = [
