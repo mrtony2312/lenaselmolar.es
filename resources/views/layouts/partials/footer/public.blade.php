@@ -1,3 +1,4 @@
+﻿@php($nap = config('merchant.nap'))
 <footer id="tbay-footer" class="tbay-footer footer-01">
 
     <div data-elementor-type="wp-post" data-elementor-id="1004" class="elementor elementor-1004">
@@ -120,23 +121,24 @@
                         </div>
                         <div class="elementor-element elementor-element-28eaac98 elementor-widget elementor-widget-text-editor"
                             data-id="28eaac98" data-element_type="widget" data-widget_type="text-editor.default">
-                            <p><strong>Dirección:</strong> Calle de la Salud, 4, 28710 El Molar (Madrid), España</p>
+                            <p><strong>Dirección:</strong> {{ $nap['address_line'] }}</p>
                         </div>
                         <div class="elementor-element elementor-element-4d89dafe elementor-widget elementor-widget-text-editor"
                             data-id="4d89dafe" data-element_type="widget" data-widget_type="text-editor.default">
-                            <p><span style="color: #191919;"><strong>Teléfono:</strong></span> +34 679 24 55 97</p>
+                            <p><span style="color: #191919;"><strong>Teléfono:</strong></span>
+                                <a href="tel:{{ $nap['telephone'] }}" style="color:inherit">{{ $nap['telephone_display'] }}</a></p>
                         </div>
                         <div class="elementor-element elementor-element-4cf5ce6 elementor-widget elementor-widget-text-editor"
                             data-id="4cf5ce6" data-element_type="widget" data-widget_type="text-editor.default">
-                            <p><span style="color: #191919;"><strong>Denominación: </strong></span>Leñas El Molar C.B.</p>
+                            <p><span style="color: #191919;"><strong>Denominación: </strong></span>{{ $nap['legal_name'] }}</p>
                         </div>
                         <div class="elementor-element elementor-element-99b9b26 elementor-widget elementor-widget-text-editor"
                             data-id="99b9b26" data-element_type="widget" data-widget_type="text-editor.default">
-                            <p><strong>NIF:</strong> E85899003</p>
+                            <p><strong>NIF:</strong> {{ $nap['tax_id'] }}</p>
                         </div>
                         <div class="elementor-element elementor-element-4996a4d elementor-widget elementor-widget-text-editor"
                             data-id="4996a4d" data-element_type="widget" data-widget_type="text-editor.default">
-                            <p><strong>IVA:</strong> ESE85899003</p>
+                            <p><strong>IVA:</strong> {{ $nap['vat_id'] }}</p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +153,7 @@
                                     <h3 class="heading-tbay-title style-1">
 
 
-                                        <span class="title">Información legal</span>
+                                        <span class="title">Empresa</span>
 
 
                                     </h3>
@@ -331,7 +333,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-429a145d elementor-widget elementor-widget-text-editor"
                             data-id="429a145d" data-element_type="widget" data-widget_type="text-editor.default">
-                            <p>Copyright © <strong><span style="color: #191919;">Leñas El Molar C.B.</span></strong>.
+                            <p>Copyright &copy; <strong><span style="color: #191919;">{{ $nap['legal_name'] }}</span></strong>.
                                 Todos los derechos reservados.</p>
                         </div>
                     </div>
@@ -425,3 +427,4 @@
         </div>
     </div>
 </div>
+

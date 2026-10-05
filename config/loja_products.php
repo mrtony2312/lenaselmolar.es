@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
     [
@@ -2358,7 +2358,7 @@ La Madera Densificada – Madera Dura + Madera Blanda es la elección perfecta p
     ],
     [
         'id' => 5640,
-        'title' => 'Madera densificada – madera dura + madera blanda – palé de 960 kg',
+        'title' => 'Madera densificada – frondosas y coníferas – palé de 960 kg',
 
 
         'hover_image' => '',
@@ -2371,13 +2371,13 @@ La Madera Densificada – Madera Dura + Madera Blanda es la elección perfecta p
         ],
 
         'in_stock' => true, 'color' => '',
-        'short_description' => 'Madera densificada del día, compuesta por 70% de virutas de haya, roble, fresno y 30% de madera blanda proveniente de aserraderos locales, producida en Picardía a partir de bosques certificados PEFC. 100% natural, sin cola ni aditivos. ¡Ayude a regenerar el bosque: 1 palé comprado = 10 árboles replantados! Vendida en 96 lotes de 6 varillas.',
+        'short_description' => 'Madera densificada compuesta por 70% de virutas de haya, roble y fresno (frondosas) y 30% de coníferas procedentes de aserraderos locales, producida en Picardía a partir de bosques certificados PEFC. 100% natural, sin aglomerantes ni aditivos. ¡Ayude a regenerar el bosque: 1 palé comprado = 10 árboles replantados! Vendida en 96 lotes de 6 varillas.',
              'ref' => '53745640',
-             'description' => 'Madera Densificada – Madera Dura + Madera Blanda – Palé de 960 kg
-La madera densificada de madera dura y madera blanda es una opción de calefacción de alta eficiencia, ideal para quienes buscan un combustible natural, sostenible y de alto rendimiento. Este palé de 960 kg combina lo mejor de los dos tipos de madera, ofreciendo una combustión óptima, con alto poder calorífico y bajo nivel de cenizas. Gracias a su proceso de densificación, la madera tiene un contenido de humedad muy bajo, lo que mejora la eficiencia de la combustión y reduce la producción de residuos.
+             'description' => 'Madera Densificada – Frondosas y Coníferas – Palé de 960 kg
+La madera densificada de frondosas y coníferas es una opción de calefacción de alta eficiencia, ideal para quienes buscan un combustible natural, sostenible y de alto rendimiento. Este palé de 960 kg combina lo mejor de los dos tipos de madera, ofreciendo una combustión óptima, con alto poder calorífico y bajo nivel de cenizas. Gracias a su proceso de densificación, la madera tiene un contenido de humedad muy bajo, lo que mejora la eficiencia de la combustión y reduce la producción de residuos.
 Características:
 
-Composición: Madera dura y madera blanda densificada
+Composición: Frondosas y coníferas densificadas
 
 Cantidad: Palé de 960 kg de madera densificada
 
@@ -2395,7 +2395,7 @@ Beneficios:
 
 Eficiencia energética, reduciendo los costes de calefacción
 
-Combinación de maderas duras y blandas, que ofrecen un rendimiento térmico excelente y uniforme
+Combinación de frondosas y coníferas, que ofrecen un rendimiento térmico excelente y uniforme
 
 Ecológica y sostenible, fabricada con madera proveniente de fuentes responsables
 
@@ -2405,11 +2405,11 @@ Bajas emisiones de CO2, respetando el medio ambiente
 
 Combustión limpia, con producción mínima de residuos y humo
 
-Con el palé de Madera Densificada – Madera Dura + Madera Blanda, podrá disfrutar de una calefacción eficiente, económica y respetuosa con el medio ambiente durante todo el invierno.',
+Con el palé de Madera Densificada – Frondosas y Coníferas, podrá disfrutar de una calefacción eficiente, económica y respetuosa con el medio ambiente durante todo el invierno.',
 
 
 
-        'slug' => 'madera-densificada-madera-dura-madera-macia-palet-de-960-kg'
+        'slug' => 'madera-densificada-frondosas-coniferas-pale-de-960-kg'
     ],
     [
         'id' => 5641,
